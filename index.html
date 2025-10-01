@@ -1,57 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dom practice project</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.css" rel="stylesheet" type="text/css" />
-</head>
-<body class="overflow-x-hidden">
-     
-  <header>
-    <nav class="w-full flex flex-col sm:flex-row justify-center items-center text-center gap-4 p-4">
-      <div>
-        <img class="w-16 h-16 sm:w-20 sm:h-20" src="assets/logo.png" alt="">
-      </div>
-      <div>
-        <div class="flex gap-3 text-xl font-bold justify-center">
-          <h1>Deshi</h1>
-          <h1>Deals</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom practice project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <header>
+      <nav
+        class="w-full flex flex-col sm:flex-row justify-center items-center text-center gap-4 p-4"
+      >
+        <div>
+          <img class="w-16 h-16 sm:w-20 sm:h-20" src="assets/logo.png" alt="" />
         </div>
-        <div class="flex gap-4 text-sm sm:text-base justify-center mt-1">
-          <p>Cheap Price</p>
-          <p>Best Quality</p>
+        <div>
+          <div class="flex gap-3 text-xl font-bold justify-center">
+            <h1>Deshi</h1>
+            <h1>Deals</h1>
+          </div>
+          <div class="flex gap-4 text-sm sm:text-base justify-center mt-1">
+            <p>Cheap Price</p>
+            <p>Best Quality</p>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      <section class="head-sec-1 w-full h-[534px] px-4 py-12 text-center">
+        <div class="max-w-3xl mx-auto">
+          <h3 class="text-xl sm:text-2xl font-semibold">
+            Purchase TK 200 or above & get
+          </h3>
+          <h3 class="text-2xl sm:text-4xl font-bold text-secondary">20% OFF</h3>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6"
+        >
+          <p class="text-base sm:text-lg">Use Promo Code</p>
+          <button
+            class="btn btn-active btn-secondary w-40 sm:w-52 h-12 sm:h-16 text-lg"
+          >
+            Sell200
+          </button>
+        </div>
+        <div class="max-w-lg sm:max-w-2xl mx-auto mt-10">
+          <img
+            class="w-full h-auto object-contain"
+            src="assets/hero-bg.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </header>
+    <main class="main-sec w-full h-[3012px]">
+      <section class="main-sec-1 w-[96] h-[96]">
+        <h1 class="main-sec-1-h1 w-[294px] h-[47px] text-2xl font-bold mb-6">
+          Kitchenware
+        </h1>
+        <div class="main-div-1 flex gap-[24px]">
+          <!-- Kitchen-1 -->
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-1" class="K-Accessories text-lg font-semibold mb-3">
+              K. Accessories
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/kitchen-1.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-1" class="taka text-lg font-bold mt-2">39.00 TK</h3>
+            <button id="btn-1" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+          <!-- Kitchen-2 -->
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-2" class="K-Accessories text-lg font-semibold mb-3">
+              Home Cooker
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/kitchen-3.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-2" class="taka text-lg font-bold mt-2">49.00 TK</h3>
+            <button id="btn-2" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+          <!-- Kitchen-3 -->
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-3" class="K-Accessories text-lg font-semibold mb-3">
+              K. Accessories
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/kitchen-2.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-3" class="taka text-lg font-bold mt-2">25.00 TK</h3>
+            <button id="btn-3" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Sportswear -->
+        <h1
+          class="main-sec-1-h1 w-[294px] h-[47px] text-2xl font-bold mt-10 mb-6"
+        >
+          Sportswear
+        </h1>
+        <div class="main-div-1 flex gap-[24px]">
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-4" class="K-Accessories text-lg font-semibold mb-3">
+              Sports Back Cap
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/sports-1.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-4" class="taka text-lg font-bold mt-2">49.00 TK</h3>
+            <button id="btn-4" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-5" class="K-Accessories text-lg font-semibold mb-3">
+              Full Jersey Set
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/sports-2.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-5" class="taka text-lg font-bold mt-2">59.00 TK</h3>
+            <button id="btn-5" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-6" class="K-Accessories text-lg font-semibold mb-3">
+              Sports Cates
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/sports-3.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-6" class="taka text-lg font-bold mt-2">185.00 TK</h3>
+            <button id="btn-6" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Furniture -->
+        <h1
+          class="main-sec-1-h1 w-[294px] h-[47px] text-2xl font-bold mt-10 mb-6"
+        >
+          Furniture
+        </h1>
+        <div class="main-div-1 flex gap-[24px]">
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-7" class="K-Accessories text-lg font-semibold mb-3">
+              Single Relax Chair
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/furniture-1.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-7" class="taka text-lg font-bold mt-2">249.00 TK</h3>
+            <button id="btn-7" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-8" class="K-Accessories text-lg font-semibold mb-3">
+              Children Play
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/furniture-2.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-yellow-400">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-8" class="taka text-lg font-bold mt-2">59.00 TK</h3>
+            <button id="btn-8" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+          <div
+            class="main-div-1-div-1 w-[342px] flex flex-col justify-start items-center border rounded-xl p-4 shadow-md"
+          >
+            <h3 id="title-9" class="K-Accessories text-lg font-semibold mb-3">
+              Flexible Sofa
+            </h3>
+            <div
+              class="img-div w-[302px] h-[200px] flex justify-center items-center"
+            >
+              <img
+                class="img w-[129px] h-[135px]"
+                src="assets/furniture-3.png"
+                alt=""
+              />
+            </div>
+            <div class="flex space-x-2 text-2xl mt-3">
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+              <span class="text-gray-300">★</span>
+            </div>
+            <h3 id="price-9" class="taka text-lg font-bold mt-2">339.00 TK</h3>
+            <button id="btn-9" class="btn btn-secondary w-full mt-4 btn-event">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+  class="main-sec-2 max-w-md w-full flex flex-col justify-center items-center mx-auto mt-12 px-4"
+>
+  <!-- Coupon Section -->
+  <div class="main-sec-2-div-1 w-full bg-base-100 p-6 rounded-xl shadow-md">
+    <h3 class="cuppon text-center text-lg font-semibold mb-4">Have a coupon?</h3>
+    <div class="flex items-center space-x-2">
+      <div class="w-full max-w-md flex flex-col sm:flex-row gap-6">
+  <!-- Input -->
+  <input
+    id="cuppon"
+    type="text"
+    placeholder="Coupon Code"
+    class="input input-bordered  text-center w-full"
+  />
+  
+  <!-- Apply Button -->
+  <button class="btn btn-secondary">Apply</button>
+</div>
 
-    
-    <section class="w-full px-4 py-12 text-center">
-      <div class="max-w-3xl mx-auto">
-        <h3 class="text-xl sm:text-2xl font-semibold">Purchase TK 200 or above & get</h3>
-        <h3 class="text-2xl sm:text-4xl font-bold text-secondary">20% OFF</h3>
-      </div>
+    </div>
+  </div>
 
-      
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
-        <p class="text-base sm:text-lg">Use Promo Code</p>
-        <button class="btn btn-active btn-secondary w-40 sm:w-52 h-12 sm:h-16 text-lg">Sell200</button>
-      </div>
+  <!-- Cart Container -->
+  <div
+    id="cart-container"
+    class="space-y-3 mt-6 w-full max-w-sm px-4 py-2 border rounded-lg bg-base-100 shadow-sm"
+  >
+    <!-- Items will be added here -->
+  </div>
 
-      
-      <div class="max-w-lg sm:max-w-2xl mx-auto mt-10">
-        <img class="w-full h-auto object-contain" src="assets/hero-bg.png" alt="">
-      </div>
-    </section>
-  </header>
+  <!-- Price Calculation -->
+  <div class="price-calc w-full max-w-sm bg-base-100 p-4 mt-6 rounded-xl shadow-md">
+    <h3 id="totalPrice" class="text-base font-medium">Total price: <span>0</span>Tk</h3>
+    <h3 id="discount" class="text-base font-medium">Discount: <span>0</span>Tk</h3>
+    <h3 id="total" class="text-lg font-bold mt-2">Total: <span>0</span>Tk</h3>
+  </div>
 
-  <main>
-  </main>
+  <!-- Purchase Button -->
+  <div class="btn-div w-full max-w-sm flex justify-center items-center mt-4">
+    <button class="btn btn-secondary w-full">Purchase Now</button>
+  </div>
+</section>
 
-  <footer>
-  </footer>
-    
-</body>
+    </main>
+    <footer></footer>
+    <script src="dom1.js"></script>
+  </body>
 </html>

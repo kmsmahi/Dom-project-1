@@ -1,39 +1,103 @@
-.nav-div-h1{
-color: rgba(231, 21, 128, 1);
-font-family: Work Sans;
-font-size: 48px;
-font-weight: 400;
+body {
+  background: rgba(248, 248, 248, 1);
 }
-.nav-div-p{
-color: rgba(121, 112, 117, 1);
-font-family: Work Sans;
-font-size: 20px;
-font-weight: 400;
+
+/* Navbar */
+nav {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
 }
-.head-sec-1{
-background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.979),rgba(236, 136, 191, 0.37) 100%);
+
+/* Sections */
+.head-sec-1 {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(246, 221, 233, 1) 100%);
 }
-.heading-1{
-font-family: Work Sans;
-font-size: 58px;
-font-weight: 700;
-color:rgba(17, 17, 17, 1);
+
+.main-sec-1-h1 {
+  color: rgba(17, 17, 17, 1);
+  font-family: Work Sans;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 1.5rem 0;
+  text-align: center;
 }
-.heading-2{
-font-family: Work Sans;
-font-size: 58px;
-font-weight: 700;
-color:rgba(229, 39, 178, 1);
+
+.main-div-1 {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
 }
-.head-para-1{
-color: rgba(17, 17, 17, 1);
-font-family: Work Sans;
-font-size: 24px;
-font-weight: 500;
+
+.main-div-1-div-1 {
+  border-radius: 8px;
+  background: #fff;
+  width: 100%;
 }
-.sell200{
-color: rgba(255, 255, 255, 1);
-font-family: Work Sans;
-font-size: 24px;
-font-weight: 600;
+
+/* Images */
+.img-div {
+  border-radius: 8px;
+  background: rgba(17, 17, 17, 0.05);
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+.K-Accessories {
+  color: rgba(17, 17, 17, 1);
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.taka {
+  color: rgba(17, 17, 17, 0.5);
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cuppon {
+  color: rgba(17, 17, 17, 1);
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Coupon input */
+.input-div {
+  border: 1px solid rgba(17, 17, 17, 0.15);
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  background-color: palevioletred;
+  width: 100%;
+  max-width: 280px;
+}
+
+/* Price summary */
+.price-calc {
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+}
+
+.cart-add-class {
+  border-radius: 13px;
+  background: rgba(244, 241, 241, 1);
+  padding: 10px;
 }
